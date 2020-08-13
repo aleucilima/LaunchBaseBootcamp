@@ -1,4 +1,4 @@
-//Crie um programa que armazena dados da empresa Rocketseat dentro de um objeto chamado empresa
+//Crie um programa que armazena dados da empresa Rocketseat dentro de um objeto chamado empresa.
 
 const empresa = {
     nome: 'Rocketseat',
