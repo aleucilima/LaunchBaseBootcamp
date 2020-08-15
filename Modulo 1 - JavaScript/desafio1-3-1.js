@@ -3,3 +3,4 @@
 //Percorra a lista de usuários com uma estrutura de repetição imprimindo em tela
 //informações dos usuários.
 
+const inicioAqui = 0
