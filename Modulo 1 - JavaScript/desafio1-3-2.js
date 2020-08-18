@@ -21,7 +21,7 @@ const usuarios = [
 
   
   function calculaSaldo(receitas, despesas) {}
-
+        //calcular as receitas atraves de for
   function somaNumeros(numeros) {
     // Soma todos números dentro do array "numeros"
   }
