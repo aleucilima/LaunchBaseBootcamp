@@ -18,19 +18,33 @@ const usuarios = [
       despesas: [450.2, 29.9]
     }
   ];
+  
+  for(let i = 0; i < usuarios.length; i++){
+    let receitas = usuarios[i].receitas
+    let despesas = usuarios[i].despesas
 
-  for (let i = 0; i < usuarios.length; i++) {
-    receitas = 0
-    despesas = 0
-    for(let i = 0; i< receitas.length;i++){
-       return receitas = receitas + receitas[i]
+    const result = calculaSaldo(receitas, despesas)
+
+    if (result > 0) {
+      console.log(`${usuarios[i].nome} Seu saldo POSITIVO é de: ${result}`)
     }
-    
-  }
+    else{
+    console.log(`${usuarios[i].nome} Seu saldo NEGATIVO é de: ${result}`)
+   }
+  } 
 
 
-  function calculaSaldo(receitas, despesas) {}
-        //calcular as receitas atraves de for
+  function calculaSaldo(receitas, despesas) {
+      const rec = somaNumeros(receitas)
+      const des = somaNumeros(despesas)
+      let result = rec - des
+      return result
+    }   
+  
   function somaNumeros(numeros) {
-    // Soma todos números dentro do array "numeros"
+    let sum = 0
+    for (let i = 0; i < numeros.length; i++){
+      sum = sum + numeros[i]
+    }
+    return sum
   }
