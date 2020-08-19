@@ -19,7 +19,16 @@ const usuarios = [
     }
   ];
 
-  
+  for (let i = 0; i < usuarios.length; i++) {
+    receitas = 0
+    despesas = 0
+    for(let i = 0; i< receitas.length;i++){
+       return receitas = receitas + receitas[i]
+    }
+    
+  }
+
+
   function calculaSaldo(receitas, despesas) {}
         //calcular as receitas atraves de for
   function somaNumeros(numeros) {
