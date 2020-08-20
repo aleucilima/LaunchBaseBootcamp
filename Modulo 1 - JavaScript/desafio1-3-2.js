@@ -18,20 +18,7 @@ const usuarios = [
       despesas: [450.2, 29.9]
     }
   ];
-  
-  for(let i = 0; i < usuarios.length; i++){
-    let receitas = usuarios[i].receitas
-    let despesas = usuarios[i].despesas
-
-    const result = calculaSaldo(receitas, despesas)
-
-    if (result > 0) {
-      console.log(`${usuarios[i].nome} Seu saldo POSITIVO é de: ${result}`)
-    }
-    else{
-    console.log(`${usuarios[i].nome} Seu saldo NEGATIVO é de: ${result}`)
-   }
-  } 
+ 
 
 
   function calculaSaldo(receitas, despesas) {
@@ -39,7 +26,21 @@ const usuarios = [
       const des = somaNumeros(despesas)
       let result = rec - des
       return result
-    }   
+    } 
+
+  for(let i = 0; i < usuarios.length; i++){
+      let receitas = usuarios[i].receitas
+      let despesas = usuarios[i].despesas
+  
+      const result = calculaSaldo(receitas, despesas)
+  
+      if (result > 0) {
+        console.log(`${usuarios[i].nome} Seu saldo POSITIVO é de: ${result}`)
+      }
+      else{
+      console.log(`${usuarios[i].nome} Seu saldo NEGATIVO é de: ${result}`)
+     }
+    } 
   
   function somaNumeros(numeros) {
     let sum = 0
