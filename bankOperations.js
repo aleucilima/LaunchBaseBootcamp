@@ -7,6 +7,14 @@ const user = {
     balance: 0
 }
 
+function createTransaction(transaction){
+    user.transactions.push(transaction)
+}
+
+if (transation === 'credit') {
+    
+}
+
 createTransaction({ type: "credit", value: 50 });
 createTransaction({ type: "credit", value: 120 });
 createTransaction({ type: "debit", value: 80 });
