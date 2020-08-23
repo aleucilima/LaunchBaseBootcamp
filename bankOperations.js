@@ -12,7 +12,10 @@ function createTransaction(transaction){
 }
 
 if (transation === 'credit') {
-    
+    return user.balance = user.balance + transaction.value
+}
+else {
+    return user.balance = user.balance - transaction.value
 }
 
 createTransaction({ type: "credit", value: 50 });
