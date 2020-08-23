@@ -7,21 +7,24 @@ const user = {
     balance: 0
 }
 
-function createTransaction(transaction) {
-    user.transactions.push(transaction)
-    if (transation.type == 'credit') {
-        return user.balance = user.balance + transaction.value
+function createTransaction(type, value) {
+    user.transactions.push({
+        type: type,
+        value: value
+    })
+    if (type == "credit") {
+        return user.balance = user.balance + value
     }
     else {
-        return user.balance = user.balance - transaction.value
+        return user.balance = user.balance - value
     }
 }
 
 
-createTransaction({ type: "credit", value: 50 });
-createTransaction({ type: "credit", value: 120 });
-createTransaction({ type: "debit", value: 80 });
-createTransaction({ type: "debit", value: 30 });
+createTransaction("credit",  50);
+createTransaction("credit", 120);
+createTransaction("debit", 80);
+createTransaction("debit", 30);
 
 console.log(user.balance); // 60
 
