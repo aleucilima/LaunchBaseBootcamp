@@ -1,6 +1,3 @@
-//Crie um programa para realizar operações bancárias 
-//na conta de um usuário.
-
 const user = {
     name: "Mariana",
     transactions: [],
@@ -12,6 +9,7 @@ function createTransaction(type, value) {
         type: type,
         value: value
     })
+   
     if (type == "credit") {
         return user.balance = user.balance + value
     }
@@ -20,17 +18,33 @@ function createTransaction(type, value) {
     }
 }
 
+function getHigherTransactionByType(transactionType) {
+    let maxValue = 0
+    let typeTransaction = ""
+    for(userTransaction of user.transactions) {
+        if(userTransaction.type == transactionType && userTransaction.value > maxValue){
+            typeTransaction = userTransaction.type
+            maxValue = userTransaction.value
+            
+        }
+    }
+    console.log(`Max value ${typeTransaction} is ${maxValue}`)
+}
 
-createTransaction("credit",  50);
-createTransaction("credit", 120);
-createTransaction("debit", 80);
-createTransaction("debit", 30);
+createTransaction("credit", 50)
+createTransaction("credit", 120)
+createTransaction("debit", 80)
+createTransaction("debit", 30)
 
-console.log(user.balance); // 60
+console.log(`Your balance is $ ${user.balance}`)
 
-getHigherTransactionByType("credit"); // { type: 'credit', value: 120 }
-getHigherTransactionByType("debit"); // { type: 'debit', value: 80 }
+getHigherTransactionByType("credit")
+getHigherTransactionByType("debit")
 
-getAverageTransactionValue(); // 70
 
-getTransactionsCount(); // { credit: 2, debit: 2 }
+
+
+
+getAverageTransactionValue() // 70
+
+getTransactionsCount() // { credit: 2, debit: 2 }
