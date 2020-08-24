@@ -28,7 +28,7 @@ function getHigherTransactionByType(transactionType) {
 
         }
     }
-    console.log(`Max value ${typeTransaction} is ${maxValue}`)
+    console.log(`Max value ${typeTransaction} is $ ${maxValue}`)
 }
 
 function getTransactionsCount() {
@@ -56,7 +56,15 @@ getHigherTransactionByType("credit")
 getHigherTransactionByType("debit")
 
 
-getAverageTransactionValue() // 70
+getAverageTransactionValue()
 
+function getAverageTransactionValue() {
+    let sum = 0
+    for (let i = 0; i < user.transactions.length; i++) {
+        sum += user.transactions[i].value
+    }
+    const average = sum /user.transactions.length
 
+    return console.log(`This average is $ ${average}`)
+}
 getTransactionsCount() 
