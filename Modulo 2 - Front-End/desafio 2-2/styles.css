@@ -1,0 +1,66 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;   
+    border: 0;     
+}
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    padding: 30px 0px;
+    text-align: center;
+}
+.links a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+}
+.links a:hover {
+    color: rgb(110, 35, 160);
+    transition: 200ms;
+}
+section .img-logo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+section div img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+section .description{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+section div h1 {
+    font-size: 44px;
+    line-height: 54px;
+    padding:10px;
+}
+section div h2 {
+    padding: 10px;
+}
+section div p {
+    padding: 10px;
+}
+section div ul{
+    list-style-type: none;
+}
+footer {
+    text-align: center;
+}
+footer #links-footer a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+footer #links-footer a:hover {
+    color: rgb(110, 35, 160);
+    transition: 200ms;
+}
