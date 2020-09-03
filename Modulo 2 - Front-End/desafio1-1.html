@@ -6,6 +6,7 @@
     <title>Desafio 1 - Primeiro HTML</title>
     <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -13,7 +14,7 @@
             border: 0;     
         }
         body {
-            background-color: rgb(44, 16, 66);
+            background-color: black;
             font-family: 'Roboto', sans-serif;
         }
         header {
@@ -26,11 +27,29 @@
             color: white;
         }
         .links a:hover {
-            color: rgb(190, 46, 41);
+            color: rgb(110, 35, 160);
             transition: 200ms;
         }
+        section .img-logo {
+            text-align: center;
+            padding-top: 20px;
+        }
 
-        
+        section div img {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        section .description{
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        section div h1 {
+            font-size: 34px;
+            line-height: 44px;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +60,15 @@
             <a href="tel:+5547992078767">Telefone</a>
         </div>
     </header>
+    <section>
+        <div class="img-logo">
+            <img src="https://quarentena.tech/img/rocketseat.jpg" alt="logoRocketseat"/>
+        </div>
+        <div class="description">
+            <h1>Rocketseat</h1>
+        </div>
+    </section>
+    
     
 </body>
 </html>
