@@ -10,7 +10,7 @@
     border: 0;     
 }
 body {
-    background-color: black;
+    background-color: rgb(18, 18, 20);
     font-family: 'Roboto', sans-serif;
 }
 header {
@@ -84,7 +84,7 @@ section {
     text-align: center;
     border: 1px solid white;
     border-radius: 2%;
-    background-color: #070606;
+    background-color: rgb(32, 32, 36);
 }
 .card__image-container {
     padding-top: 120px; 
