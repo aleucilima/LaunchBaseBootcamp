@@ -2,6 +2,7 @@
 
 :root {
     --color-rocket: rgb(110, 35, 160);
+    --color-card: rgb(32, 32, 36);
 }
 
 * {
@@ -96,10 +97,50 @@ section {
 }
 
 .card__info {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 30px;
-    padding-bottom: 120px;
+    padding: 30px 30px 120px 30px;
 }
 
+.card__info .price {
+    background-color: var(--color-card);
+    filter: brightness(90%);
+    border-radius: 20px;
+    text-align: center;
+}
 
+/*== MODAL ==*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer
+}
+
+/*== MODAL.ACTIVE ==*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
