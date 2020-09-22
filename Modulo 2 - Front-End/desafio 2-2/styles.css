@@ -70,6 +70,11 @@ footer #links-footer a:hover {
     transition: 200ms;
 }
 
+.info {
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+}
 /*== CONTENT ==*/
 
 section {
@@ -77,6 +82,8 @@ section {
     padding:5px 50px;
 }
 .cards {
+    max-width: 800px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -87,8 +94,9 @@ section {
     border-radius: 2%;
     background-color: rgb(32, 32, 36);
 }
-.card__image-container {
-    padding-top: 120px; 
+.card__image-container img {
+    padding-top: 120px;
+    width: 100%;
 }
 
 .card__content {
@@ -102,7 +110,7 @@ section {
     padding: 30px 30px 120px 30px;
 }
 
-.card__info .price {
+.card__info .time {
     background-color: var(--color-card);
     filter: brightness(90%);
     border-radius: 20px;
@@ -143,4 +151,11 @@ section {
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
 }
